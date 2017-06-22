@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="alert_sound" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pJY-zp-f8W">
+                                <rect key="frame" x="92" y="147.5" width="191" height="372"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cve-DV-MsJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="191" height="72"/>
+                                        <state key="normal" title="Alert me!"/>
+                                        <connections>
+                                            <action selector="doAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yKH-4y-vrP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clq-u1-0zh">
+                                        <rect key="frame" x="0.0" y="92" width="191" height="30"/>
+                                        <state key="normal" title="Alert with Buttons!"/>
+                                        <connections>
+                                            <action selector="doMultiBottonAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="04f-FL-hGM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ug3-QX-bu7">
+                                        <rect key="frame" x="0.0" y="142" width="191" height="30"/>
+                                        <state key="normal" title="I Need Input!"/>
+                                        <connections>
+                                            <action selector="doAlertInput:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0so-z9-83k"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAd-Oo-4EL">
+                                        <rect key="frame" x="0.0" y="192" width="191" height="30"/>
+                                        <state key="normal" title="Lights,Camera,Action Sheet"/>
+                                        <connections>
+                                            <action selector="doActionSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EJ9-nt-lTI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNf-Ri-d25">
+                                        <rect key="frame" x="0.0" y="242" width="191" height="30"/>
+                                        <state key="normal" title="Play Sound"/>
+                                        <connections>
+                                            <action selector="doSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W4r-cR-daF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOr-7a-icQ">
+                                        <rect key="frame" x="0.0" y="292" width="191" height="30"/>
+                                        <state key="normal" title="Play Alert Sound"/>
+                                        <connections>
+                                            <action selector="doAlertSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TsL-jP-Mym"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6p-sE-fM6">
+                                        <rect key="frame" x="0.0" y="342" width="191" height="30"/>
+                                        <state key="normal" title="Vibrate Device"/>
+                                        <connections>
+                                            <action selector="doVibration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WDS-fz-5Wh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWE-TO-1Gx">
+                                <rect key="frame" x="46" y="561" width="282" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nWE-TO-1Gx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="5MO-Nu-1Fc"/>
+                            <constraint firstItem="nWE-TO-1Gx" firstAttribute="top" secondItem="pJY-zp-f8W" secondAttribute="bottom" constant="41.5" id="Hys-Za-8Mb"/>
+                            <constraint firstItem="pJY-zp-f8W" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VEm-d8-v3W"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nWE-TO-1Gx" secondAttribute="trailing" constant="31" id="XwG-QL-CjE"/>
+                            <constraint firstItem="pJY-zp-f8W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="opH-LV-Zow"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nWE-TO-1Gx" secondAttribute="bottom" constant="106" id="zQh-Zm-9MS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="userOutput" destination="nWE-TO-1Gx" id="ndb-wm-QZO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>

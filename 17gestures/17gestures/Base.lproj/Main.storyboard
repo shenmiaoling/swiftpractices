@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_7gestures" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sJS-Kh-bMl">
+                                <rect key="frame" x="16" y="53" width="129" height="84"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Me!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMc-4G-7D2">
+                                        <rect key="frame" x="33" y="32" width="62" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.99328637990355451" blue="0.55148745853259817" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="TMc-4G-7D2" firstAttribute="leading" secondItem="sJS-Kh-bMl" secondAttribute="leading" constant="33" id="5S1-zq-YZB"/>
+                                    <constraint firstItem="TMc-4G-7D2" firstAttribute="top" secondItem="sJS-Kh-bMl" secondAttribute="top" constant="32" id="Fnc-FM-X1r"/>
+                                    <constraint firstItem="TMc-4G-7D2" firstAttribute="centerX" secondItem="sJS-Kh-bMl" secondAttribute="centerX" id="a36-hQ-8sq"/>
+                                    <constraint firstItem="TMc-4G-7D2" firstAttribute="centerY" secondItem="sJS-Kh-bMl" secondAttribute="centerY" id="p51-cQ-Dnd"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="x0R-Ik-HnG" appends="YES" id="OZ6-Kd-dhs"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRm-WR-uIP">
+                                <rect key="frame" x="153" y="53" width="206" height="84"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe Me!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAr-Qa-z1X">
+                                        <rect key="frame" x="63" y="32" width="80" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.72111710557789022" green="1" blue="0.94691951233660232" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="gAr-Qa-z1X" firstAttribute="centerY" secondItem="gRm-WR-uIP" secondAttribute="centerY" id="e4L-0S-WRm"/>
+                                    <constraint firstItem="gAr-Qa-z1X" firstAttribute="centerX" secondItem="gRm-WR-uIP" secondAttribute="centerX" id="gUU-t4-AFU"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="7Xi-7f-icd" appends="YES" id="9Ge-Gk-CCf"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZJ-2M-8k4">
+                                <rect key="frame" x="16" y="145" width="343" height="126"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pinch Me!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAX-zn-Cde">
+                                        <rect key="frame" x="133" y="53" width="76" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.86403064773974059" blue="0.90455879107315695" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="UAX-zn-Cde" firstAttribute="top" secondItem="rZJ-2M-8k4" secondAttribute="top" constant="53" id="3Pa-ij-XYn"/>
+                                    <constraint firstItem="UAX-zn-Cde" firstAttribute="centerY" secondItem="rZJ-2M-8k4" secondAttribute="centerY" id="NA8-mY-OfJ"/>
+                                    <constraint firstItem="UAX-zn-Cde" firstAttribute="centerX" secondItem="rZJ-2M-8k4" secondAttribute="centerX" id="Ors-px-AOP"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="HhV-jm-UQt" appends="YES" id="G6i-vl-WsO"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4TU-0G-JzE">
+                                <rect key="frame" x="16" y="279" width="343" height="192"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotate Me!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYT-AZ-D3P">
+                                        <rect key="frame" x="130" y="86" width="83" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.58030501770446685" green="1" blue="0.62448426095808884" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="gYT-AZ-D3P" firstAttribute="centerY" secondItem="4TU-0G-JzE" secondAttribute="centerY" id="8A5-Za-koI"/>
+                                    <constraint firstItem="gYT-AZ-D3P" firstAttribute="centerX" secondItem="4TU-0G-JzE" secondAttribute="centerX" id="iv1-VA-qVa"/>
+                                    <constraint firstItem="gYT-AZ-D3P" firstAttribute="top" secondItem="4TU-0G-JzE" secondAttribute="top" constant="86" id="xrA-sg-KOp"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Chw-Tq-QPG" appends="YES" id="LWt-Hk-KaY"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do Something!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBU-nJ-Hxl">
+                                <rect key="frame" x="16" y="20" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LAq-4D-egv">
+                                <rect key="frame" x="118" y="506" width="138" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="daj-cV-3aN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gRm-WR-uIP" firstAttribute="leading" secondItem="sJS-Kh-bMl" secondAttribute="trailing" constant="8" id="18i-SI-lYa"/>
+                            <constraint firstItem="rZJ-2M-8k4" firstAttribute="top" secondItem="gRm-WR-uIP" secondAttribute="bottom" constant="8" symbolic="YES" id="9le-O9-UmA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LAq-4D-egv" secondAttribute="bottom" constant="37" id="Bpx-a7-mcJ"/>
+                            <constraint firstItem="gRm-WR-uIP" firstAttribute="trailing" secondItem="rZJ-2M-8k4" secondAttribute="trailing" id="Dkh-VA-cZm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gRm-WR-uIP" secondAttribute="trailing" id="FEZ-Qs-bCh"/>
+                            <constraint firstItem="LAq-4D-egv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KKi-4O-amD"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="sJS-Kh-bMl" secondAttribute="leading" id="NIc-Wc-m3f"/>
+                            <constraint firstItem="uBU-nJ-Hxl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="PBx-ZU-bHg"/>
+                            <constraint firstItem="rZJ-2M-8k4" firstAttribute="trailing" secondItem="4TU-0G-JzE" secondAttribute="trailing" id="c2c-W2-fRs"/>
+                            <constraint firstItem="LAq-4D-egv" firstAttribute="top" secondItem="4TU-0G-JzE" secondAttribute="bottom" constant="35" id="cdt-C4-xOf"/>
+                            <constraint firstItem="rZJ-2M-8k4" firstAttribute="top" secondItem="sJS-Kh-bMl" secondAttribute="bottom" constant="8" symbolic="YES" id="eNb-NL-5xJ"/>
+                            <constraint firstItem="sJS-Kh-bMl" firstAttribute="top" secondItem="uBU-nJ-Hxl" secondAttribute="bottom" constant="12" id="fVK-pe-NsN"/>
+                            <constraint firstItem="rZJ-2M-8k4" firstAttribute="leading" secondItem="4TU-0G-JzE" secondAttribute="leading" id="iBw-cG-HDi"/>
+                            <constraint firstItem="4TU-0G-JzE" firstAttribute="top" secondItem="rZJ-2M-8k4" secondAttribute="bottom" constant="8" symbolic="YES" id="ipP-5Y-DEW"/>
+                            <constraint firstItem="sJS-Kh-bMl" firstAttribute="leading" secondItem="rZJ-2M-8k4" secondAttribute="leading" id="k0g-Ov-ye8"/>
+                            <constraint firstItem="sJS-Kh-bMl" firstAttribute="top" secondItem="gRm-WR-uIP" secondAttribute="top" id="pNe-27-Qav"/>
+                            <constraint firstItem="uBU-nJ-Hxl" firstAttribute="leading" secondItem="sJS-Kh-bMl" secondAttribute="leading" id="uIa-M3-0PL"/>
+                            <constraint firstItem="uBU-nJ-Hxl" firstAttribute="trailing" secondItem="gRm-WR-uIP" secondAttribute="trailing" id="vo1-pV-iqo"/>
+                            <constraint firstItem="4TU-0G-JzE" firstAttribute="centerX" secondItem="LAq-4D-egv" secondAttribute="centerX" id="xhf-6D-0YD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="LAq-4D-egv" id="9dD-6Q-c7s"/>
+                        <outlet property="outputLabel" destination="uBU-nJ-Hxl" id="wOZ-3G-Mgh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="x0R-Ik-HnG">
+                    <connections>
+                        <action selector="foundTap:" destination="BYZ-38-t0r" id="aSb-QO-1bV"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="7Xi-7f-icd">
+                    <connections>
+                        <action selector="foundSwipe:" destination="BYZ-38-t0r" id="IAQ-Vf-88f"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <pinchGestureRecognizer id="HhV-jm-UQt">
+                    <connections>
+                        <action selector="foundPinch:" destination="BYZ-38-t0r" id="IOS-cx-dl1"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="Chw-Tq-QPG">
+                    <connections>
+                        <action selector="foundzRotation:" destination="BYZ-38-t0r" id="M5D-Is-U0C"/>
+                    </connections>
+                </rotationGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
