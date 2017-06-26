@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tHV-Ss-ffu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="zcN-R8-SVl">
+            <objects>
+                <viewController id="tHV-Ss-ffu" customClass="ViewController" customModule="mediaPlayground" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JxM-hh-k1w"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yu3-vw-vwc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hve-ov-P74">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ymb-lp-GEF">
+                                <rect key="frame" x="148" y="51" width="79" height="30"/>
+                                <state key="normal" title="Load Movie"/>
+                                <connections>
+                                    <action selector="loadMovie:" destination="tHV-Ss-ffu" eventType="touchUpInside" id="NCk-Ix-8AS"/>
+                                </connections>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PWu-P5-cd3">
+                                <rect key="frame" x="16" y="109" width="343" height="242"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="Xrm-qg-hPv"/>
+                                    <constraint firstAttribute="height" constant="242" id="ZKt-UZ-9vr"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="X1P-8E-4SM" kind="embed" id="YN6-vq-SRb"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tea-h9-kTe">
+                                <rect key="frame" x="33" y="376" width="136" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Record Audio"/>
+                                <connections>
+                                    <action selector="recordAudio:" destination="tHV-Ss-ffu" eventType="touchUpInside" id="sOb-7a-N6B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QnE-wM-aSZ">
+                                <rect key="frame" x="274" y="376" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play Audio"/>
+                                <connections>
+                                    <action selector="playAudio:" destination="tHV-Ss-ffu" eventType="touchUpInside" id="Ucn-gd-pSJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ymb-lp-GEF" firstAttribute="centerX" secondItem="PWu-P5-cd3" secondAttribute="centerX" id="YAT-2c-spg"/>
+                            <constraint firstItem="Ymb-lp-GEF" firstAttribute="top" secondItem="JxM-hh-k1w" secondAttribute="bottom" constant="31" id="gDb-wd-YSG"/>
+                            <constraint firstItem="PWu-P5-cd3" firstAttribute="leading" secondItem="Hve-ov-P74" secondAttribute="leadingMargin" id="ibV-Go-8tB"/>
+                            <constraint firstItem="PWu-P5-cd3" firstAttribute="top" secondItem="Ymb-lp-GEF" secondAttribute="bottom" constant="28" id="vl0-yX-GlS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PWu-P5-cd3" secondAttribute="trailing" id="wjZ-3d-KAX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="recordButton" destination="Tea-h9-kTe" id="rfJ-3S-da2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f2Y-Et-8xi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="189.59999999999999" y="-217.24137931034485"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="UJd-p0-s7E">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="X1P-8E-4SM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="euW-et-yKq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036" y="-234"/>
+        </scene>
+    </scenes>
+</document>

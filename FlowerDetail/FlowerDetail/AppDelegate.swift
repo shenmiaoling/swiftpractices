@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  FlowerDetail
+//  flowerDetail
 //
-//  Created by nhn on 2017/6/16.
-//  Copyright © 2017年 nhn. All rights reserved.
+//  Created by vara shen on 2017/6/23.
+//  Copyright © 2017年 vara shen. All rights reserved.
 //
 
 import UIKit
